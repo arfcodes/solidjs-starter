@@ -1,0 +1,42 @@
+{
+  "name": "@arfcodes/solidjs-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Solid JS starter",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arfcodes/solidjs-starter"
+  },
+  "keywords": [
+    "solidjs",
+    "javascript",
+    "starter"
+  ],
+  "author": "M Arif Mahthunisnaini",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-line-length": [
+        2,
+        "always",
+        200
+      ]
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
